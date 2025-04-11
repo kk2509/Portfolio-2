@@ -1,0 +1,118 @@
+<!--<%- include("partials/header.ejs") %>
+
+<main class="index-main">
+  <h1>Home Page</h1>
+
+  <p>Lorem ipsum dolor sit amet, et proin, justo mus. Porta suspendisse turpis netus sagittis tortor at, vitae aliquet
+    pharetra cras velit, id gravida, neque nulla lorem, posuere hac. Ultricies eget lacus vehicula, in ante aliquam
+    et,facilisis tempor duis orci. Sed molestie sem in duis eu id, nisl id ultricies metus blandit eget praesent, pede
+    tempornullam, vitae arcu tortor suspendisse nibh risus. Nulla id suscipit reiciendis nulla erat. Porta enim aute
+    luctus,ducimus sodales dolor.
+  </p>
+  <p>
+    Quam purus justo enim purus, dolor enim, ut eu lectus nam eget nibh. Ante illum nullam leo, vivamus aliquam massa
+    massainceptos fermentum porttitor, blandit vehicula, lorem in placerat ut aliquam at sociosqu. Vivamus duis
+    ultricies
+    aliquam placerat, tincidunt scelerisque imperdiet, egestas erat vel. Libero rerum. Donec ligula tristique, purus
+    montes,
+    feugiatid nunc in a nec. Duis odio, vitae sed etiam mi massa, laoreet amet purus amet rhoncus, eget sed, arcu
+    urna.
+    Maecenaswisi id, at donec enim. Proin nisl, pulvinar leo suspendisse, cum parturient non, congue leo et ut in,
+    neque ut
+    lacusauctor quam fermentum urna. Metus quis, mauris dictum aptent ultrices nulla viverra ornare, tempor elit enim
+    leo
+    donec,sed sed. Vivamus sapien facilisi, tempor arcu nulla justo sed et, eget suspendisse lacus sed nunc mattis
+    lectus.
+    M</p>
+  </main>
+
+  <%- include("partials/footer.ejs") %> -->
+  <%- include("partials/header.ejs") %>
+
+<main class="index-main">
+  <section class="achievements">
+    <h2>🏆 Achievements</h2>
+    <ul>
+      <li>🥇 <strong>IEO Medalist</strong> - Ranked <strong>13th in Rajasthan</strong></li>
+      <li>💡 Top 9 Teams in <strong>Smart India Hackathon</strong></li>
+      <li>🎓 Invited to <strong>IIT Bombay E-Summit</strong></li>
+    </ul>
+  </section>
+
+  <section class="technologies">
+    <h2>🛠️ Technologies Used</h2>
+    <div class="tech-logos">
+      <div class="tech">
+        <img src="/images/png-clipart-html-logo-html-web-design-scalable-graphics-world-wide-web-markup-language-html5-icon-hd-miscellaneous-angle.png" alt="HTML" />
+        <p>HTML</p>
+      </div>
+      <div class="tech">
+        <img src="/images/free-css3-frameworks.png" alt="CSS" />
+        <p>CSS</p>
+      </div>
+      <div class="tech">
+        <img src="/images/11448a7a96ee808a3cdbaf0df9570976.webp" alt="JavaScript" />
+        <p>JavaScript</p>
+      </div>
+      <div class="tech">
+        <img src="/images/png-clipart-bootstrap-logo-thumbnail-tech-companies-thumbnail.png" alt="Bootstrap" />
+        <p>Bootstrap</p>
+      </div>
+      <div class="tech">
+        <img src="/images/download.png" alt="Express JS" />
+        <p>Express JS</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include("partials/footer.ejs") %>
+
+<style>
+  .index-main {
+    /* padding: 80px 20px;  */
+   max-width: 1000px; 
+   margin: auto;
+  }
+  .achievements{
+    margin-top: 0px;
+    /* margin-bottom: 80px; */
+  }
+
+  .achievements ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1em;
+  }
+  .achievements li {
+    margin-bottom: 10px;
+  }
+
+  .technologies .tech-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+    
+  }
+
+
+  .technologies .tech {
+    text-align: center;
+    width: 120px;
+    border-bottom: 100px;
+  }
+
+  .technologies img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 50%;
+
+  }
+  .tech {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+</style>
